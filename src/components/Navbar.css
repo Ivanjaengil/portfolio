@@ -4,7 +4,7 @@
   background: rgba(26, 31, 60, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
-  justify-content: center;
+  width: 100%;
   border-bottom: 1px solid rgba(52, 152, 219, 0.3);
   box-shadow: 0 0 15px rgba(52, 152, 219, 0.2),
               0 0 30px rgba(52, 152, 219, 0.1);
@@ -19,7 +19,27 @@
 }
 
 .navbar-collapse {
-  justify-content: space-between;
+  position: relative;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
+}
+
+@media (max-width: 991.98px) {
+  .nav-links {
+    position: static;
+    transform: none;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 .social-icons {

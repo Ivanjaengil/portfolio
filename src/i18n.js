@@ -36,7 +36,7 @@ const resources = {
         },
         freelance_wordpress: {
           title: "Gestor de páginas web, Profesional independiente",
-          date: "📅 Abril 2025 - Julio 2025",
+          date: "📅 Enero 2025 - Julio 2025",
           location: "📍 Remoto",
           responsibilities: [
             "Como profesional independiente, me encargué de la creación, configuración y gestión de una página web utilizando WordPress, alojada y administrada a través de IONOS.",
