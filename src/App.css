@@ -87,6 +87,10 @@ p {
   background-color: #0d112e;
 }
 
+#projects h2 {
+  margin-bottom: 3.5rem;
+}
+
 /* Efectos de hover y animaciones */
 section {
   transition: all 0.3s ease;
@@ -98,23 +102,10 @@ h2:hover::after {
   background-color: #3498db;
 }
 
-/* Responsive */
+/* Responsive - tipografía móvil */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  p {
-    font-size: 1rem;
-    padding: 0 20px;
-  }
-  
-  section {
-    padding: 60px 15px;
   }
 }
 
@@ -176,10 +167,12 @@ h2:hover::after {
 
 @media (max-width: 768px) {
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
   }
-  
+
   .tech-icon-large {
     width: 60px;
     height: 60px;
@@ -441,13 +434,61 @@ h2:hover::after {
 }
 
 @media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .App {
+    overflow-x: hidden;
+  }
+
+  section {
+    min-height: auto;
+    padding: 90px 16px 48px;
+    justify-content: flex-start;
+  }
+
+  #about {
+    padding-top: 100px;
+  }
+
+  .neon-container {
+    padding: 1.25rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-image {
+    flex: none;
+    width: min(260px, 80vw);
+    height: min(260px, 80vw);
+  }
+
+  .about-intro {
+    font-size: 1.1rem !important;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0;
+  }
+
   .experience-container {
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
   }
 
   .experience-item,
   .education-section {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .experience-item {
+    margin-bottom: 1.5rem;
   }
 
   .experience-details {
@@ -457,11 +498,300 @@ h2:hover::after {
 
   .experience-item h3,
   .education-section h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .experience-details p {
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .experience-responsibilities li {
+    font-size: 0.95rem;
+    padding-left: 1.25rem;
   }
 
   .education-item h4 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  #projects h2 {
+    margin-bottom: 2rem;
+  }
+
+  .projects-container {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .project-item {
+    padding: 1.25rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+    padding: 0;
+    max-width: none;
+  }
+
+  .project-tech {
+    gap: 8px;
+  }
+
+  .tech-icon-container span {
+    font-size: 0.85rem;
+  }
+
+  .education-item p {
+    padding: 0;
+    text-align: left;
+  }
+
+  .tech-item {
+    padding: 1rem 0.75rem;
+  }
+
+  .tech-name {
+    font-size: 0.95rem;
+  }
+
+  .project-images img {
+    width: 100%;
+  }
+
+  .carousel-image {
+    width: 100%;
+  }
+
+  .carousel-btn {
     font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  section {
+    padding: 85px 12px 40px;
+  }
+
+  .neon-container {
+    padding: 1rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .tech-icon-large {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech-item {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .tech-name {
+    font-size: 0.85rem;
+  }
+
+  .project-item {
+    padding: 1rem;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* ─────────────────────────────── */
+/* iPad / tablet (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    overflow-x: hidden;
+  }
+
+  section {
+    min-height: auto;
+    padding: 100px 32px 56px;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  #about {
+    padding-top: 110px;
+  }
+
+  .neon-container {
+    padding: 2rem;
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+    max-width: 900px;
+    box-sizing: border-box;
+  }
+
+  .about-content {
+    gap: 2.5rem;
+  }
+
+  .profile-image {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-intro {
+    font-size: 1.25rem !important;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    padding: 0;
+  }
+
+  .experience-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .experience-item,
+  .education-section {
+    padding: 1.75rem;
+  }
+
+  .experience-item h3,
+  .education-section h3 {
+    font-size: 1.55rem;
+  }
+
+  .experience-details p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .education-item p {
+    padding: 0;
+  }
+
+  #projects h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .project-item {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.45rem;
+  }
+
+  .project-info p {
+    padding: 0;
+    max-width: none;
+  }
+
+  .tech-grid {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .tech-item {
+    padding: 1.25rem 1rem;
+  }
+
+  .tech-icon-large {
+    width: 65px;
+    height: 65px;
+  }
+
+  .project-images img {
+    width: 48%;
+  }
+
+  .carousel-image {
+    width: 75%;
+    max-width: 480px;
+  }
+}
+
+/* iPad landscape: layout más parecido a escritorio */
+@media (min-width: 992px) and (max-width: 1024px) {
+  .neon-container {
+    max-width: 960px;
+    padding: 2.5rem;
+  }
+
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-text h2 {
+    text-align: left;
+  }
+
+  .about-text h2::after {
+    left: 0;
+    transform: none;
+  }
+
+  .about-content p {
+    text-align: left;
+  }
+
+  .profile-image {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 960px;
+  }
+
+  .experience-container,
+  .projects-container {
+    max-width: 960px;
   }
 }
 
@@ -504,6 +834,24 @@ h2:hover::after {
   margin: 0;
 }
 
+.project-description {
+  margin: 0.75rem 0 0.5rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project-built-with {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #b0bec5;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.project-status {
+  margin-bottom: 0.5rem;
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -538,14 +886,45 @@ h2:hover::after {
   color: #ffffff;
 }
 
+.status-done,
+.status-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.status-done::before,
+.status-progress::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
 .status-done {
   color: #2ecc71;
-  font-weight: bold;
+}
+
+.status-done::before {
+  background: #2ecc71;
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.7);
 }
 
 .status-progress {
   color: #f1c40f;
-  font-weight: bold;
+}
+
+.status-progress::before {
+  background: #f1c40f;
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.7);
+  animation: status-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 .project-link {

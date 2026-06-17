@@ -33,12 +33,120 @@
 }
 
 @media (max-width: 991.98px) {
-  .nav-links {
+  .custom-navbar {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .custom-navbar.scrolled {
+    padding: 0.5rem 1rem;
+  }
+
+  .custom-navbar .navbar-toggler {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .custom-navbar .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .custom-navbar .navbar-collapse {
+    position: static;
+    flex-grow: 1;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 0 0.25rem;
+    gap: 0.25rem;
+  }
+
+  .custom-navbar .nav-links {
     position: static;
     transform: none;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 0.15rem 0;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-navbar .social-icons {
+    margin-right: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.75rem 0 0.25rem;
+    border-top: 1px solid rgba(52, 152, 219, 0.2);
+    margin-top: 0.5rem;
+  }
+
+  .custom-navbar .nav-separator {
+    display: none;
+  }
+
+  .custom-navbar .flag-button {
+    margin-left: 0;
+  }
+}
+
+/* iPad / tablet: menú horizontal al expandir */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .custom-navbar .navbar-collapse {
+    padding: 1rem 1.5rem;
+  }
+
+  .custom-navbar .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.25rem;
+  }
+
+  .custom-navbar .nav-link {
+    width: auto;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .custom-navbar .social-icons {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    gap: 1.25rem;
+  }
+}
+
+/* iPad landscape: navbar de escritorio más compacta */
+@media (min-width: 992px) and (max-width: 1024px) {
+  .custom-navbar {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 0 0.85rem;
+    font-size: 1rem;
+  }
+
+  .custom-navbar .social-icons {
+    margin-right: 0.5rem;
+    gap: 1.1rem;
+  }
+
+  .custom-navbar .social-icon {
+    font-size: 1.35rem;
+    padding: 0.35rem;
   }
 }
 

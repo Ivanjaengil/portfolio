@@ -13,10 +13,10 @@ const resources = {
       },
       about: {
         title: "¡Hola! Soy Iván",
-        intro: "Tengo 26 años y soy desarrollador web con un enfoque en crear soluciones digitales eficientes y accesibles.",
-        description: "Me especializo en el desarrollo frontend creando interfaces dinámicas y atractivas con React, JavaScript, HTML, CSS y Tailwind CSS, cuidando cada detalle para transformar ideas en experiencias visuales intuitivas y funcionales.",
-        passion: "La curiosidad y la pasión por la tecnología me impulsan a aprender constantemente, experimentar con nuevas herramientas y superar desafíos para que cada proyecto sea una oportunidad de crecer y crear algo único.",
-      },
+        intro: "Soy desarrollador web especializado en frontend y backend, enfocado en crear aplicaciones modernas, accesibles y responsivas.",
+        description: "Trabajo principalmente con React, JavaScript, HTML, CSS y Tailwind CSS para construir interfaces dinámicas e intuitivas, además de desarrollar APIs y lógica de servidor que permiten crear soluciones completas.",
+        passion: "Me gusta transformar ideas en productos digitales funcionales, cuidando tanto la experiencia de usuario como la calidad, escalabilidad y mantenibilidad del código.",
+        },        
       experience: {
         title: "Experiencia",
         proxya: {
@@ -25,13 +25,13 @@ const resources = {
           location: "📍 Hibrido",
           responsibilities: [
             "Mantenimiento técnico, diagnóstico y actualización de equipos informáticos y sistemas operativos.",
-            "Atención y resolución de incidencias relacionadas con hardware, software, redes locales y conectividad.",
+            "Resolución de incidencias de hardware, software, redes locales y conectividad.",
             "Administración básica de entornos Windows Server y Active Directory (AD): creación de usuarios, gestión de permisos, políticas de grupo y soporte a usuarios.",
-            "Gestión y soporte de servicios Microsoft 365: administración de usuarios, licencias, correo electrónico (Outlook) y herramientas colaborativas.",
-            "Creación, configuración y mantenimiento de máquinas virtuales utilizando Hyper-V y VMware para entornos de pruebas y producción.",
+            "Soporte y gestión de Microsoft 365: administración de usuarios, licencias, correo electrónico (Outlook) y herramientas colaborativas.",
+            "Creación, configuración y mantenimiento de máquinas virtuales con Hyper-V y VMware para entornos de pruebas y producción.",
             "Aplicación de medidas de seguridad informática, control de accesos, copias de seguridad y buenas prácticas de protección de datos.",
-            "Elaboración de informes técnicos y documentación de incidencias, procedimientos y configuraciones.",
-            "Colaboración en tareas de mantenimiento preventivo y mejora continua de la infraestructura tecnológica.",
+            "Elaboración de documentación técnica: incidencias, procedimientos y configuraciones.",
+            "Colaboración en tareas de mantenimiento preventivo y mejora continua de la infraestructura IT.",
           ]
         },
         freelance_wordpress: {
@@ -39,9 +39,13 @@ const resources = {
           date: "📅 Enero 2025 - Julio 2025",
           location: "📍 Remoto",
           responsibilities: [
-            "Como profesional independiente, me encargué de la creación, configuración y gestión de una página web utilizando WordPress, alojada y administrada a través de IONOS.",
-            "Realicé la construcción completa del sitio web, incluyendo la configuración de hosting y dominio, instalación y personalización de WordPress, temas y plugins. También gestioné la estructura del sitio y los contenidos, asegurando un diseño funcional y fácil de mantener.",
-            "Además, llevé a cabo tareas de mantenimiento, actualizaciones, copias de seguridad y resolución de incidencias, garantizando la estabilidad y correcto funcionamiento de la web. Esta experiencia me permitió trabajar de forma autónoma, organizar proyectos web de principio a fin y adaptarme a las necesidades del cliente."
+          "Diseño, configuración y gestión de sitios web utilizando WordPress.",
+          "Administración de hosting y dominio a través de IONOS.",
+          "Instalación y personalización de WordPress, temas y plugins según requisitos del proyecto.",
+          "Desarrollo y mantenimiento de la estructura del sitio y gestión de contenidos.",
+          "Optimización del funcionamiento del sitio mediante actualizaciones, copias de seguridad y resolución de incidencias.",
+          "Garantía de estabilidad, rendimiento y disponibilidad del sitio web en producción.",
+          "Gestión autónoma del proyecto web de principio a fin, adaptándome a las necesidades del cliente.",
           ]
         },
         grupo_oro: {
@@ -50,11 +54,11 @@ const resources = {
           location: "📍 Remoto",
           responsibilities: [
             "Desarrollo y mantenimiento de aplicaciones web utilizando TypeScript, React, PHP y Laravel.",
-            "Implementación de interfaces dinámicas y componentes reutilizables con React y Tailwind CSS, enfocadas en la experiencia de usuario.",
-            "Diseño y gestión de bases de datos MySQL para aplicaciones web, asegurando eficiencia y escalabilidad.",
-            "Integración de APIs REST, servicios externos y flujos de automatización mediante n8n, incluyendo procesos asistidos por inteligencia artificial.",
-            "Automatización de tareas, sincronización de datos y optimización de flujos de trabajo mediante n8n para mejorar la productividad y reducir procesos manuales.",
-            "Pruebas, depuración y optimización de código para mejorar el rendimiento, la estabilidad y la usabilidad de las aplicaciones.",
+            "Implementación de interfaces dinámicas y componentes reutilizables con React y Tailwind CSS, orientados a la experiencia de usuario.",
+            "Diseño y gestión de bases de datos MySQL, asegurando eficiencia, escalabilidad y buen rendimiento.",
+            "Integración de APIs REST y servicios externos, así como automatización de procesos mediante n8n.",
+            "Implementación de flujos de automatización con n8n, incluyendo procesos asistidos por inteligencia artificial para optimizar tareas internas.",
+            "Pruebas, depuración y optimización de código para mejorar rendimiento, estabilidad y mantenibilidad de las aplicaciones.",
           ]
         }
       },
@@ -77,35 +81,35 @@ const resources = {
         status_label: "Estado:",
         view_github: "🔗 Ver en GitHub",
         status: {
-          done: "✅ Terminado",
-          progress: "⏳ En proceso"
+          done: "Terminado",
+          progress: "En proceso"
         },
         lego: {
-          name: "Tienda Lego - Tienda de piezas de lego",
-          description: "Una tienda online para vender piezas de Lego. Incluye registro de usuarios, carrito de compras y gestión de inventario.",
-          builtWith: "Backend en Laravel con MySQL, frontend en HTML, CSS y JavaScript."
+          name: "Tienda Lego",
+          description: "E-commerce de piezas de LEGO con sistema de usuarios, carrito de compras y gestión de inventario.",
+          builtWith: "Laravel + MySQL en el backend y HTML, CSS y JavaScript en el frontend."
         },
         driver: {
-          name: "Driver&Go - Plataforma de venta y alquiler de vehículos",
-          description: "Aplicación web para la venta de coches. Permite la publicación de vehículos, gestión de usuarios y filtrado avanzado de autos.",
-          builtWith: "Laravel y PHP en el backend, MySQL para la base de datos, HTML y CSS para la presentación."
+          name: "Driver&Go",
+          description: "Plataforma de compraventa y alquiler de vehículos con gestión de usuarios, publicación de anuncios y filtrado avanzado.",
+          builtWith: "Laravel y PHP en el backend, MySQL como base de datos y HTML y CSS en el frontend."
         },
         southwines: {
-          name: "SouthWines - Academia",
-          description: "Plataforma de gestión académica que permite administrar cursos, profesores y alumnos de una academia.",
-          builtWith: "Laravel como framework principal, base de datos MySQL y frontend con HTML, CSS y JavaScript."
+          name: "SouthWines",
+          description: "Plataforma de gestión académica para administración de cursos, profesores y alumnos.",
+          builtWith: "Laravel como framework principal, MySQL para la base de datos y HTML, CSS y JavaScript en el frontend."
         },
         zestcharge: {
-          name: "ZestCharge - Tienda de bebidas energéticas",
-          description: "E-commerce especializado en bebidas energéticas con pasarela de pagos y sistema de carrito.",
-          builtWith: "Laravel en el backend, MySQL para la base de datos y TailwindCSS para la interfaz."
+          name: "ZestCharge",
+          description: "E-commerce de bebidas energéticas con catálogo de productos y sistema de carrito de compras.",
+          builtWith: "Laravel en el backend, MySQL como base de datos y Tailwind CSS para la interfaz."
         },
         metotech: {
-          name: "MeteoTech - Aplicacion Web del tiempo",
-          description: "Aplicación Web para consultar el estado del tiempo.",
-          builtWith: "Desarrollado con Angular, TypeScript, CSS y HTML."
+          name: "MeteoTech",
+          description: "Aplicación web para consultar el estado del tiempo mediante consumo de API meteorológica.",
+          builtWith: "Angular, TypeScript, HTML y CSS."
         }
-      }
+      },
     },
   },
   en: {
@@ -182,33 +186,33 @@ const resources = {
         status_label: "Status:",
         view_github: "🔗 View on GitHub",
         status: {
-          done: "✅ Completed",
-          progress: "⏳ In Progress"
+          done: "Completed",
+          progress: "In Progress"
         },
         lego: {
-          name: "Lego Store - Lego pieces store",
-          description: "An online store to sell Lego pieces. Includes user registration, shopping cart, and inventory management.",
-          builtWith: "Backend in Laravel with MySQL, frontend in HTML, CSS, and JavaScript."
+          name: "Tienda Lego",
+          description: "LEGO pieces e-commerce with user system, shopping cart, and inventory management.",
+          builtWith: "Laravel + MySQL on the backend and HTML, CSS, and JavaScript on the frontend."
         },
         driver: {
-          name: "Driver&Go - Vehicle sales and rental platform",
-          description: "Web application for selling cars. Allows vehicle publication, user management, and advanced car filtering.",
-          builtWith: "Laravel and PHP in the backend, MySQL for the database, HTML and CSS for presentation."
+          name: "Driver&Go",
+          description: "Vehicle buying, selling, and rental platform with user management, ad publishing, and advanced filtering.",
+          builtWith: "Laravel and PHP on the backend, MySQL as the database, and HTML and CSS on the frontend."
         },
         southwines: {
-          name: "SouthWines - Academy",
-          description: "Academic management platform that allows administering courses, teachers, and students of an academy.",
-          builtWith: "Laravel as main framework, MySQL database, and frontend with HTML, CSS, and JavaScript."
+          name: "SouthWines",
+          description: "Academic management platform for courses, teachers, and students administration.",
+          builtWith: "Laravel as the main framework, MySQL for the database, and HTML, CSS, and JavaScript on the frontend."
         },
         zestcharge: {
-          name: "ZestCharge - Energy drinks store",
-          description: "E-commerce specialized in energy drinks with payment gateway and shopping cart system.",
-          builtWith: "Laravel in the backend, MySQL for the database, and TailwindCSS for the interface."
+          name: "ZestCharge",
+          description: "Energy drinks e-commerce with product catalog and shopping cart system.",
+          builtWith: "Laravel on the backend, MySQL as the database, and Tailwind CSS for the interface."
         },
         metotech: {
-          name: "MeteoTech - Weather Web App",
-          description: "Web Application to check weather status.",
-          builtWith: "Developed with Angular, TypeScript, CSS, and HTML."
+          name: "MeteoTech",
+          description: "Web application to check weather conditions by consuming a weather API.",
+          builtWith: "Angular, TypeScript, HTML, and CSS."
         }
       }
     },

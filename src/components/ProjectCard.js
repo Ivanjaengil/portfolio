@@ -8,11 +8,13 @@ const ProjectCard = ({ project, techIcons }) => {
     <div className="project-item">
       <div className="project-info">
         <h3>{project.name}</h3>
-        <p>
+        <p className="project-description">{project.description}</p>
+        <p className="project-built-with">{project.builtWith}</p>
+        <p className="project-status">
           <strong>{t("projects.status_label")}</strong>{" "}
           <span
             className={
-              project.status.includes("✅")
+              project.statusKey === "done"
                 ? "status-done"
                 : "status-progress"
             }
