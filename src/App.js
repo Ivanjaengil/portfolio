@@ -204,6 +204,10 @@ function App() {
           <div className="education-section">
             <h3>{t("education.title")}</h3>
             <div className="education-item">
+              <h4>{t("education.master_ciberseguridad.title")}</h4>
+              <p className="education-date">{t("education.master_ciberseguridad.date")}</p>
+            </div>
+            <div className="education-item">
               <h4>{t("education.daw.title")}</h4>
               <p className="education-date">{t("education.daw.date")}</p>
             </div>

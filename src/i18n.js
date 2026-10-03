@@ -64,6 +64,10 @@ const resources = {
       },
       education: {
         title: "Formación Academica",
+        master_ciberseguridad: {
+          title: "Máster Profesional en Ciberseguridad en Entornos TI",
+          date: "📅 Cursando"
+        },
         daw: {
           title: "Grado Superior en Desarrollo de Aplicaciones Web",
           date: "📅 Finalizado en 2025"
@@ -169,6 +173,10 @@ const resources = {
       },
       education: {
         title: "Education",
+        master_ciberseguridad: {
+          title: "Professional Master's Degree in Cybersecurity in IT Environments",
+          date: "📅 In Progress"
+        },
         daw: {
           title: "Higher Technician in Web Application Development",
           date: "📅 Finished in 2025"
